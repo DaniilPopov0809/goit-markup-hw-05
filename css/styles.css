@@ -155,7 +155,7 @@ button {
 .current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   content: "";
   display: block;
@@ -680,6 +680,11 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--primary-white-color);
   cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: var(--accent-color);
 }
 
 .modal {
